@@ -1,13 +1,94 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* selection color start  */
+:root {
+  --color-gray-light: #D9D9D9;
+  --color-blue-light: #EBF2FA;
+  --color-red-primary: #EC1B09;
+  --color-gray-background: #F2F5F9;
+  --color-orange-accent: #FF9C1B;
+  --color-white: #FFFFFF
 }
+
+body {
+  background-color: var(--color-gray-background);
+}
+
+.App {
+  margin: 20px;
+}
+
+/* selection color end  */
+/* Navbar start  */
+.App-navbar {}
+
+.App-navbar__list {
+  list-style: none;
+}
+
+.App-navbar__item {
+  width: 80px;
+}
+
+.App-navbar__link {
+  display: flex;
+  text-decoration: none;
+  background: linear-gradient(var(--color-orange-accent), var(--color-red-primary));
+  justify-content: start;
+  align-items: start;
+  margin: 30px 0;
+  color: var(--color-gray-background);
+  padding: 10px 16px;
+  border-radius: 10px;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+/* Navbar End  */
+/* profile-details Start  */
+.App-profile {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.App__social {
+  list-style: none;
+  display: flex;
+}
+
+.App-profile__image {
+  height: 140px;
+  width: 180px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.App-profile__image img {
+  height: 100%;
+  width: 100%;
+}
+
+.App-profile__title {
+  /* Element styling */
+}
+
+.App-profile__info {
+  /* Element styling */
+}
+
+.App__contact__card {
+  list-style: none;
+}
+
+/* profile-details Start  */
